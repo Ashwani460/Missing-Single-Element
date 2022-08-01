@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+struct array 
+{
+    int A[50];
+    int length;
+};
+int main()
+{
+    int s,i,n,sum,d,k;
+    sum=0;
+    s=0;
+    cout<<"Enter Size"<<endl;
+    cin>>n;
+    struct array arr;
+    cout<<"Enter the array element size";
+    cin>>k;
+    cout<<"Enter the elements";
+    for(i=0;i<k;i++)
+    {   
+        
+        cin>>arr.A[i];
+    }
+    for(i=0;i<k;i++)
+        sum=sum+arr.A[i];
+    for(int j=arr.A[0];j<n+arr.A[0];j++)
+        s=s+j;
+    d=s-sum;
+    cout<<"Missing Element is"<<" "<<d<<endl;
+}
